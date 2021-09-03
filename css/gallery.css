@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: plum;
+}
+
+#test {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 10;
+}
+
+/*#forward {
+  position: absolute;
+  top:50%;
+  left:0;
+  transform:translate(0,-50%);
+  z-index:10;
+}*/
+#endContainer {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+#startContainer {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+#back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: plum;
+  color: white;
+  font-size: 2em;
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  font-weight: bold;
+  border-radius: 30px;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  z-index: 10;
+}
+
+#forward {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: plum;
+  color: white;
+  font-size: 2em;
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  font-weight: bold;
+  border-radius: 30px;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  z-index: 10;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+#end {
+  position: relative;
+}
+
+.sticker-gallery {
+  aspect-ratio: 1/1;
+  margin-left: 5px;
+  width: auto;
+  height: 100%;
+}
+
+div.scrollmenu {
+  padding: 10px 0;
+  background-color: white;
+  position: relative;
+  height: 300px;
+  width: auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu div {
+  width: auto;
+  height: 100%;
+  display: inline-block;
+}
+
+@media screen and(orientation:landscape) {
+  body {
+    background-color: blue;
+  }
+}
+
+/******                                                */
